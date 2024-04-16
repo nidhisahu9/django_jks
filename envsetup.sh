@@ -3,7 +3,7 @@
 if [-d "env"]
 then 
   echo "python venv exists"
-else 
+else
   python3 -m venv env 
 fi
 echo $PWD
