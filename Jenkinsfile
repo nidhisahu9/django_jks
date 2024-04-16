@@ -26,12 +26,5 @@ pipeline{
                 '''
             }
         }
-          stage('Docker image Build') {
-            steps {
-                script {
-                   docker.build('myapp:latest', '-f . /Dockerfile .')
-                }
-            }
-        }
     }
 }
